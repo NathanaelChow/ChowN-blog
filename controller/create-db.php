@@ -10,5 +10,5 @@
         echo "success: " . $connection->host_info;
     }
 
-    $connection->close();
+    $connection->close(); 
             
