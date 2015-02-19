@@ -11,7 +11,7 @@
     </div>
     
     
-    <div>
+    <div>   
         <label for="username">Username: </label>
         <input type="text" name="username" />
     </div>
@@ -26,4 +26,4 @@
         <button type="submit">Submit</button>
     </div>
     
-</form>
+</form> 
