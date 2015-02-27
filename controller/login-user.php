@@ -1,5 +1,6 @@
 <?php
 
+
 require_once(__DIR__ . "/../model/config.php");
 
 $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
@@ -12,11 +13,10 @@ if ($query->num_rows == 1) {
 
     if ($row["password"] === crypt($password, $row["salt"])) {
         $_SESSION["authenticated"] = true;
-        echo "<p>Login Successful!</p>";
+       echo "<p>Login Successful!</p>";
     } else {
         echo "<p>Invalid username and password</p>";
     }
-}
-else{
+} else {
     echo "<p>Invalid username and password</p>";
 }
